@@ -8,7 +8,6 @@ exports.allProjects = function(req, res) {
 	.sort({
 		projectname: 1
 	})
-
 	.exec(function(err, projects){
 		if(err) {
 			console.log("error getting projects");
@@ -20,7 +19,6 @@ exports.allProjects = function(req, res) {
 		}
 	});
 }
-
 
 // create register method
 exports.createProject = function(req, res) {

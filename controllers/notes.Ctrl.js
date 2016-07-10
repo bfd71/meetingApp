@@ -2,6 +2,7 @@
 
 var Note = require("../models/Note.model");
 var User = require("../models/User.model");
+var Project = require('../models/Project.model');
 
 exports.allUsersNotes = function(req, res) {
 	// Find all users
