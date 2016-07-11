@@ -8,7 +8,7 @@ var projectCtrl = require("../controllers/project.Ctrl");
 router.get("/", asyncCtrl.homePage);
 router.post("/", notesCtrl.noteByMember);
 
-router.get("/newnote", notesCtrl.allUsersNotes);
+router.get("/newnote", asyncCtrl.newNote);
 router.post("/newnote", notesCtrl.createNote);
 
 router.get("/newuser", usersCtrl.allUsers);

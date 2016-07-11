@@ -61,11 +61,11 @@
             <div class="form-group">
               <label class="col-md-4 control-label">Current Project or Task</label>
               <div class="col-md-4">
-                <select id="memberName" name="memberName" class="form-control">
-                <option value="selectName">(Select Project)</option>
+                <select id="project" name="project" class="form-control">
+                <option value="selectProject">(Select Project)</option>
                   {% for project in projects %}
                   <option value="{{ project.projectname }}"
-                                name="memberName">{{ project.projectname }}</option>
+                                name="project">{{ project.projectname }}</option>
                   {% endfor %}
                 </select>                
               </div>

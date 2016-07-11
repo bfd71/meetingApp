@@ -18,7 +18,9 @@ exports.allProjects = function(req, res) {
 			});
 		}
 	});
-}
+};
+
+
 
 // create register method
 exports.createProject = function(req, res) {
